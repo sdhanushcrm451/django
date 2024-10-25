@@ -1,0 +1,6 @@
+{% extends "base.html"%}
+{% block content %}
+    <h1 class="my-5">{{note.title}}</h1>
+    <p class="my-2">{{note.text}}</p><br>
+    <a href="{% url 'notes.list'%}" class="btn btn-primary">Back to List</a>
+{% endblock %}
